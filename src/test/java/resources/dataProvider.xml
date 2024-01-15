@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="3" >
+    <test name="buyingAnyLaptop">
+        <parameter name="name" value="Luis Molina" />
+        <parameter name="country" value="Colombia" />
+        <parameter name="city" value="Medellín" />
+        <parameter name="number" value="5554123409871913" />
+        <parameter name="month" value="12" />
+        <parameter name="year" value="2026" />
+        <classes>
+            <class name="test.DemoBlazeTest">
+            </class>
+        </classes>
+    </test>
+</suite>

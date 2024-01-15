@@ -18,6 +18,8 @@ public class HomePageDemoblaze extends BasePage {
     private WebElement aboutUsButton;
     @FindBy(xpath = "//a[text()='Laptops']")
     private WebElement laptopsButton;
+    @FindBy(xpath = "//a[text()='Cart']")
+    private WebElement cartButton;
 
 
     public HomePageDemoblaze(WebDriver driver, String url) {
@@ -43,5 +45,8 @@ public class HomePageDemoblaze extends BasePage {
     }
     public void clickOnLaptops(){
         this.laptopsButton.click();
+    }
+    public void clickOnCart(){
+        this.cartButton.click();
     }
 }
