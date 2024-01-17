@@ -2,7 +2,6 @@ package test;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,7 +12,7 @@ import pages.*;
 
 import java.time.Duration;
 
-public class DemoBlazeTest {
+public class TC_buyingAnyLaptop {
     WebDriver driver;
     HomePageDemoblaze homePageDemoblaze;
     AboutUsPage aboutUsPage;
@@ -38,21 +37,6 @@ public class DemoBlazeTest {
         cartPage=new CartPage(driver);
         wait=new WebDriverWait(driver, Duration.ofSeconds(5));
     }
-    /*
-    @Test
-    public void demoblazeTest(){
-        homePageDemoblaze.clickOnSignUpButton();
-        homePageDemoblaze.writeUserName("LuchoM");
-        homePageDemoblaze.writePassword("12345");
-        homePageDemoblaze.clickOnSignUp();
-    }
-    @Test
-    public void reproduceAboutUsVideo(){
-        homePageDemoblaze.clickOnAboutUs();
-        aboutUsPage.clickPlayButton();
-    }
-     */
-
 
     @Test
     @Parameters({"name","country","city","number","month", "year"})
